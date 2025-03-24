@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Accessible Accordion</title>
+		<link href="accordion.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<main>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<div class="container">
+			  <h1>Accessible Accordions</h1>
+			
+			  <button class="accordion" id="accordion1" aria-expanded="false" aria-controls="panel1">
+			    Website Design and Development
+			  </button>
+			  <div class="accordion-content" id="panel1" role="region" aria-labelledby="accordion1">
+				<p>We provide custom full-stack applications...</p>
+			  </div>
+			
+			  <button class="accordion" id="accordion2" aria-expanded="false" aria-controls="panel2">
+			    Website Analytics and Performance
+			  </button>
+			  <div class="accordion-content" id="panel2" role="region" aria-labelledby="accordion2">
+				<p>We help analyze website performance...</p>
+			  </div>
+			
+			  <button class="accordion" id="accordion3" aria-expanded="false" aria-controls="panel3">
+			    Digital Marketing
+			  </button>
+			  <div class="accordion-content" id="panel3" role="region" aria-labelledby="accordion3">
+				<p>We provide SEO-focused marketing...</p>
+			  </div>
+			</div>
+			<script src="accordion.js"></script>
+	</body>
+</html>
